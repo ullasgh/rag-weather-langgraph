@@ -1,0 +1,24 @@
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+pydantic
+PyPDF2
+
+# LangChain / LLM
+langchain>=0.2.0
+openai
+
+# Vector DB
+qdrant-client
+
+# Frontend
+streamlit
+
+# Dev / Testing
+pytest
+pytest-asyncio
+tqdm
+
+# Optional: observability
+langsmith

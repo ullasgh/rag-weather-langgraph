@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_local
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+    environment:
+      QDRANT__SERVICE__API_KEY: ""        # optional: set if you want local API key
+      QDRANT__LOG_LEVEL: INFO
+    volumes:
+      - qdrant_storage:/qdrant/storage
+      - qdrant_snapshots:/qdrant/snapshots   # optional but useful
+
+volumes:
+  qdrant_storage:
+  qdrant_snapshots:
