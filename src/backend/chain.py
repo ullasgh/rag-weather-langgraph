@@ -1,7 +1,7 @@
 # src/backend/chain.py
 import os
-from langchain.chat_models import ChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
 from typing import List, Dict
 from dotenv import load_dotenv
 from .langsmith_logger import LangSmithLogger

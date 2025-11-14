@@ -6,7 +6,7 @@ pydantic
 PyPDF2
 
 # LangChain / LLM
-langchain>=0.2.0
+langchain
 openai
 
 # Vector DB
